@@ -61,6 +61,7 @@ body{
     background-color: var(--black);
 }
 
+
 section{
     padding: 2rem 5%;
 }
@@ -181,9 +182,9 @@ header.sticky{
 }
 
 header .logo h2{
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 900;
-    color: var(--purple);
+    color: white;
     text-transform: uppercase;
     letter-spacing: 0.2rem;
 }
@@ -284,7 +285,7 @@ header #menu-btn:hover{
 .home .content h2{
     font-size: 2.5rem;
     font-weight: 400;
-    color: var(--purple);
+    color: grey;
 }
 
 .home .content h1{
@@ -300,11 +301,14 @@ header #menu-btn:hover{
 }
 
 .home .content p{
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     font-weight: 400;
-    color: var(--white);
+    color: grey;
     padding-bottom: 2rem;
     line-height: 1.5;
+}
+.home .h2{
+    color: grey;
 }
 /*--------------------- 4- Home Area CSS (End) ---------------------*/
 
@@ -332,6 +336,7 @@ header #menu-btn:hover{
 .about .image img{
     width: 100%;
     border: 1rem solid var(--purple);
+    border-radius: 50px;
 }
 
 .about .content{
@@ -489,6 +494,9 @@ header #menu-btn:hover{
  .skill-item.item1 .box:nth-child(3) .progress-bar span{
     width:85%;
 }
+ .skill-item.item1 .box:nth-child(4) .progress-bar span{
+    width:75%;
+}
 
 .skill-item.item2 .box:nth-child(1) .progress-bar span{
     width:75%;
@@ -500,6 +508,9 @@ header #menu-btn:hover{
 
  .skill-item.item2 .box:nth-child(3) .progress-bar span{
     width:60%;
+}
+ .skill-item.item2 .box:nth-child(4) .progress-bar span{
+    width:80%;
 }
 
 /*--------------------- 5- About Area CSS (End) ---------------------*/
@@ -577,7 +588,9 @@ header #menu-btn:hover{
     font-size: 1.6rem;
     line-height: 2.5rem;
 }
-
+.slogan{
+    color: grey;
+}
 /*--------------------- 6- Qualification Area CSS (End) ---------------------*/
 
 
@@ -1176,5 +1189,6 @@ footer .content p span{
     background: var(--white);
     color:var(--black);
   }
+  
 
 /*--------------------- 13- Scroll-Top (End) ---------------------*/
