@@ -22,8 +22,6 @@
 
 </head>
 <body>
-
-
     <!-------------------- Scroll-Top Area (Start) -------------------->
     <a href="#home" class="scroll-top">
         <i class="fas fa-angle-up"></i>
@@ -71,7 +69,7 @@
                     <h2>hi there!</h2>
                     <h1>I Am a <span class="typing-text"></span></h1>
                     <p><strong>Specialized</strong> in Building Seamless Digital Experiance With <strong>Taste</strong>.</p>
-                    <a href="#" class="btn">hire me <i class="fas fa-user"></i></a>
+                    <button class="open-popup-btn btn" onclick="openPopup()">Contact Me</button>
                 </div>
             </div>
     
@@ -84,9 +82,6 @@
     </section>
 
     <!-------------------- Home Area (End) -------------------->
-
-
-
     <!-------------------- About Area (Start) -------------------->
     <section class="about" id="about">
 
@@ -108,7 +103,7 @@
                         <h4>Freelance: <span>Available</span></h4>
                         <h4>Email: <span>eazybel27@gmail.com</span></h4>
                         <a href="#" class="btn">download CV <i class="fas fa-download"></i></a>
-                        <a href="#" class="btn">hire me <i class="fas fa-user"></i></a>
+                        <button class="open-popup-btn btn" onclick="openPopup()">Contact Me</button>
                     </div>
 
                     <div class="counting">
@@ -215,7 +210,7 @@
             <div class="service-item">
                 <i class="fas fa-paint-brush"></i>
                 <h3>Web Design</h3>
-                <p>Designing visually appealing and user-friendly websites, focused on enhancing customer engagement and digital presence with modern UI/UX principles.</p>
+                <p>Designing visually appealing and user-friendly websites, focused on customer engagement and digital presence with modern UI/UX principles.lets design your digital presence today.</p>
             </div>
     
             <div class="service-item">
@@ -239,7 +234,7 @@
             <div class="service-item">
                 <i class="fas fa-search-dollar"></i>
                 <h3>Search Engine Optimization (SEO)</h3>
-                <p>Enhancing website visibility and user interaction by implementing SEO best practices, driving more organic traffic and improving overall digital performance.</p>
+                <p>Enhancing website visibility and user interaction by implementing SEO best practices, driving more organic traffic and improving overall digital performance and quality.</p>
             </div>
     
         </div>
@@ -509,72 +504,13 @@
         </div>
 
         <div class="swiper-pagination swiper-pagination2"></div>
-
     </div>
 
 </section>
 <!-------------------- Blog Area (End) -------------------->
- <!-------------------- Contact Area (Start) -------------------->
- <div class="contact_us">
-    <div class="responsive-container-block container">
-      <form class="form-box">
-        <p class="text-blk contact-head">
-          Get in touch
-        </p>
-        <p class="text-blk contact-subhead">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magnaInsert your text here.
-        </p>
-        <div class="container-block form-wrapper">
-          <div class="responsive-container-block">
-            <div class="responsive-cell-block wk-ipadp-6 wk-tab-12 wk-mobile-12 wk-desk-6" id="i10mt-4">
-              <p class="text-blk input-title">
-                First Name
-              </p>
-              <input class="input" id="ijowk-4" name="FirstName">
-            </div>
-            <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-              <p class="text-blk input-title">
-                Last Name
-              </p>
-              <input class="input" id="indfi-3" name="Last Name">
-            </div>
-            <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-              <p class="text-blk input-title">
-                Email
-              </p>
-              <input class="input" id="ipmgh-4" name="Email">
-            </div>
-            <div class="responsive-cell-block wk-desk-6 wk-ipadp-6 wk-tab-12 wk-mobile-12">
-              <p class="text-blk input-title">
-                Hire me for...
-              </p>
-              <select class="input" id="imgis-4" name="PhoneNumber">
-                <option value="1">Select Here</option>
-                <option value="1">Web Development / Design</option>
-                <option value="2">Web Fixing</option>
-                <option value="3">Project Managing</option>
-                <option value="4">Training/Mentoring</option>
-              </select>
-            </div>
-            <div class="responsive-cell-block wk-tab-12 wk-mobile-12 wk-desk-12 wk-ipadp-12" id="i634i-4">
-              <p class="text-blk input-title">
-                Message
-              </p>
-              <textarea class="textinput" id="i5vyy-4" placeholder="Write your message..."></textarea>
-            </div>
-          </div>
-          <button class="submit-btn">
-            Send Message
-          </button>
-        </div>
-      </form>
-    </div>
-  </div>
-  
-  
-    <!-------------------- Contact Area (End) -------------------->
- <!-------------------- Footer Area (Start) -------------------->
- <footer>
+<!-------------------- Footer Area (Start) -------------------->
+<footer>
+     <button class="open-popup-btn btn" onclick="openPopup()">Contact Me</button>
     <div class="social">
         <a href="#" class="fab fa-facebook-f"></a>
         <a href="#" class="fab fa-twitter"></a>
@@ -639,7 +575,53 @@
           e.preventDefault();
         });
     </script>
+    <!-- Trigger Button -->
 
 
+<!-- Popup Container -->
+<div class="popup-container" id="popupContainer">
+  <div class="popup-content">
+    <span class="close-btn" onclick="closePopup()">&times;</span>
+    <h2>Contact me here</h2>
+    <form id="contactForm">
+      <div class="form-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      
+      <!-- Checkbox Section -->
+      <div class="form-group">
+        <label>Need me for:</label>
+        <div class="checkbox-group">
+          <label class="checkbox-option">
+            <input type="checkbox" name="options" value="1"> Web Development
+          </label>
+          <label class="checkbox-option">
+            <input type="checkbox" name="options" value="2"> Web fix
+          </label>
+          <label class="checkbox-option">
+            <input type="checkbox" name="options" value="3"> Project Managing
+          </label>
+          <label class="checkbox-option">
+            <input type="checkbox" name="options" value="4"> Training / Mentor
+          </label>
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</div>
+
+
+<script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 </body>
 </html>
