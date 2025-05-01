@@ -131,7 +131,7 @@ section{
 /*--------------------- 2- Button CSS (Start) ---------------------*/
 .btn{
     display: inline-block;
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
     font-size: 1.8rem;
     color: var(--purple);
     background-color: transparent;
@@ -153,74 +153,25 @@ section{
 
 
 /*--------------------- 3- Header Area CSS (Start) ---------------------*/
-header{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 2rem 5%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
-    justify-content: space-between;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    background: transparent;
-    -webkit-transition: all 0.5s linear;
-       -moz-transition: all 0.5s linear;
-         -o-transition: all 0.5s linear;
-            transition: all 0.5s linear;
-    z-index: 999;
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.5rem; /* Reduced padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  transition: all 0.5s linear;
+  z-index: 999;
 }
 
-header.sticky{
-    border-bottom: 0.1rem solid var(--grey);
-    background: rgba(0, 0, 0, 0.8);
-}
-.grey{
-    color: white;
-}
-header .logo h2{
-    font-size: 2rem;
-    font-weight: 900;
-    color: white;
-    text-transform: uppercase;
-    letter-spacing: 0.2rem;
+header.sticky {
+  border-bottom: 0.1rem solid var(--grey);
+  background: rgba(0, 0, 0, 0.8);
 }
 
-header .navbar a{
-    color: var(--white);
-    font-size: 1.8rem;
-    margin-left: 1rem;
-}
-
-header .navbar a:hover,
-header .navbar a.active{
-    color: var(--purple);
-}
-
-header #menu-btn{
-    font-size: 3rem;
-    color: var(--white);
-    cursor: pointer;
-    -webkit-transition: all 0.5s linear;
-       -moz-transition: all 0.5s linear;
-         -o-transition: all 0.5s linear;
-            transition: all 0.5s linear;
-    display: none;
-}
-
-header .fa-times{
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
-}
-
-header #menu-btn:hover{
-    color: var(--purple);
-}
 .logo {
   display: flex;
   align-items: center;
@@ -228,9 +179,46 @@ header #menu-btn:hover{
 }
 
 .logo-img {
-  height: 40px; /* Adjust size as needed */
+  height: 45px; /* Slightly smaller for reduced height */
   margin-right: 10px;
 }
+
+header .logo h2 {
+  font-size: 1.8rem; /* Slightly smaller text */
+  font-weight: 900;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+header .navbar a {
+  color: var(--white);
+  font-size: 1.6rem; /* Slightly smaller for spacing */
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+header .navbar a:hover,
+header .navbar a.active {
+  color: var(--purple);
+}
+
+header #menu-btn {
+  font-size: 2rem;
+  color: var(--white);
+  cursor: pointer;
+  transition: all 0.5s linear;
+  display: none;
+}
+
+header .fa-times {
+  transform: rotate(180deg);
+}
+
+header #menu-btn:hover {
+  color: var(--purple);
+}
+
 
 
 /*--------------------- 3- Header Area CSS (End) ---------------------*/
