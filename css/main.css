@@ -221,6 +221,17 @@ header .fa-times{
 header #menu-btn:hover{
     color: var(--purple);
 }
+.logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-img {
+  height: 40px; /* Adjust size as needed */
+  margin-right: 10px;
+}
+
 
 /*--------------------- 3- Header Area CSS (End) ---------------------*/
 
@@ -1749,6 +1760,7 @@ footer .content p span{
   input[type="checkbox"] {
     width: auto;
     margin: 0;
+    zoom:1.5;
   }
   
   /* Updated Form Styles */

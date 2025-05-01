@@ -23,10 +23,8 @@
 </head>
 <body>
     <!-------------------- Scroll-Top Area (Start) -------------------->
-    <a href="#home" class="scroll-top">
-        <i class="fas fa-angle-up"></i>
-    </a>
-    <!-------------------- Scroll-Top Area (End) -------------------->
+   
+    <!------------------- Scroll-Top Area (End) -------------------->
 
         
 
@@ -35,11 +33,11 @@
 
         <!-- Logo -->
         <a class="logo" href="#home">
-            <h2> Eazy UX</h2> 
-            <!-- <img src="images/logo.png" alt="logo" /> -->
+            <img src="images/logo.png" alt="logo" class="logo-img" />
+            <h2>Eazy UX</h2>
         </a>
         <!-- Logo End -->
-
+    
         <!-- Navbar -->
         <nav class="navbar">
             <a href="#home">home</a>
@@ -47,14 +45,15 @@
             <a href="#service">service</a>
             <a href="#portfolio">portfolio</a>
             <a href="#testimonial">testimonials</a>
-            <a href="#blog">blogs</a>
-            <a href="#contact">contact</a>
+            <a class="mr-5" href="#blog">blogs  </a>
+            <button class="open-popup-btn btn" onclick="openPopup()">Let's Get Started</button>
         </nav>
-
+    
         <!-- Menubar -->
         <div class="fas fa-bars" id="menu-btn"></div>
-        
+    
     </header>
+    
     <!-------------------- Header Area (End) -------------------->
  
 
@@ -69,37 +68,21 @@
                     <h2>hi there!</h2>
                     <h1>I Am a <span class="typing-text"></span></h1>
                     <p><strong>Specialized</strong> in Building Seamless Digital Experiance With <strong>Taste</strong>.</p>
-                    <button class="open-popup-btn btn" onclick="openPopup()">Contact Me</button>
+                    <button class="open-popup-btn btn" onclick="openPopup()">Let's Get Started</button>
                 </div>
             </div>
     
             <div class="image">
-                <img src="images/Home-Image.png" alt="Home-Image">
+                <img src="images/Home-Image.webp" alt="Home-Image">
             </div>
-<div class="w-[90%] max-w-5xl mx-auto px-4 sm:px-6 h-12 sm:h-16 flex items-center justify-center bg-gradient-to-r from-teal-500 to-gray-700 text-white text-base sm:text-lg font-semibold rounded-2xl shadow-md text-center">
-  Building Your Digital Dream – Pixel by Pixel
-</div>
-
-
-<<<<<<< HEAD
+#
             <div class="slogan-container">
                 <div class="slogan-text">Build your digital dreams – pixel by pixel</div>
               </div>
-=======
-        </div>
-<div class="w-[90%] max-w-5xl mx-auto px-4 sm:px-6 h-12 sm:h-16 flex items-center justify-center bg-gradient-to-r from-teal-500 to-gray-700 text-white text-base sm:text-lg font-semibold rounded-2xl shadow-md text-center">
-  Building Your Digital Dream – Pixel by Pixel
-</div>
-
-
->>>>>>> 7ab46739ee114499b0b06c300ec904f44d7ef4f2
     </section>
 
     <!-------------------- Home Area (End) -------------------->
     <!-------------------- About Area (Start) -------------------->
-    <div class="w-[90%] max-w-5xl mx-auto px-4 sm:px-6 h-12 sm:h-16 flex items-center justify-center bg-gradient-to-r from-teal-500 to-gray-700 text-white text-base sm:text-lg font-semibold rounded-2xl shadow-md text-center">
-  Building Your Digital Dream – Pixel by Pixel
-</div>
 
 
     <section class="about" id="about">
@@ -107,7 +90,7 @@
         <div class="box-container">
 
             <div class="image">
-                <img src="images/About-Image.png" alt="About-Image">
+                <img src="images/About-Image.webp" alt="About-Image">
             </div>
     
             <div class="content">
@@ -122,7 +105,7 @@
                         <h4>Freelance: <span>Available</span></h4>
                         <h4>Email: <span>eazybel27@gmail.com</span></h4>
                         <a href="#" class="btn">download CV <i class="fas fa-download"></i></a>
-                        <button class="open-popup-btn btn" onclick="openPopup()">Contact Me</button>
+                        <button class="open-popup-btn btn" onclick="openPopup()">Let's Get Started</button>
                     </div>
 
                     <div class="counting">
@@ -274,53 +257,46 @@
                 <div class="portfolio-item image web">
                     <img src="images/portfolio-1.png" alt="Portfolio-Image">
                     <div class="content">
-                        <h4>web development</h4>
-                        <p>category</p>
-                        <a data-effect="mfp-newspaper" href="assets/images/Portfolio/portfolio-1.png" class="view-btn"><i class="fas fa-search-plus"></i></a>
+                        <h4>max view fitness</h4>
+                        <p>Sweat Box found me on LinkedIn. Delivered remotely. They loved it—now we’re onto project two.</p>
+                        <a  href="https://maxviewfitness.com/" class="view-btn">  <i>View the project</i></a>
                     </div>
                 </div>
     
                 <div class="portfolio-item image web">
-                    <img src="images/portfolio-2.png" alt="Portfolio-Image">
+                   <img src="images/portfolio-2.png" alt="Portfolio-Image">
                     <div class="content">
-                        <h4>web development</h4>
-                        <p>category</p>
-                        <a data-effect="mfp-newspaper" href="assets/images/Portfolio/portfolio-2.png" class="view-btn"><i class="fas fa-search-plus"></i></a>
+                        <h4>Mahider Photography</h4>
+                        <p>Built a full website for a local photography store—start to finish.</p>
+                        <a  href="https://www.maheder.photography/" class="view-btn">  <i>View the project</i></a>
                     </div>
                 </div>
     
                 <div class="portfolio-item image design">
-                    <img src="images/portfolio-3.png" alt="Portfolio-Image">
+                        <img src="images/portfolio-3.png" alt="Portfolio-Image">
                     <div class="content">
-                        <h4>graphic design</h4>
-                        <p>category</p>
-                        <a data-effect="mfp-newspaper" href="assets/images/Portfolio/portfolio-3.png" class="view-btn"><i class="fas fa-search-plus"></i></a>
+                        <h4>Nordiac Medical Center</h4>
+                        <p>Built an SEO- and accessibility-focused site for a hospital—they loved it.</p>
+                        <a href="https://www.nordicmedicalcentre.com/" class="view-btn">
+                            <i> View the project</i></a>
                     </div>
                 </div>
     
                 <div class="portfolio-item image design">
                     <img src="images/portfolio-4.png" alt="Portfolio-Image">
                     <div class="content">
-                        <h4>graphic design</h4>
-                        <p>category</p>
-                        <a data-effect="mfp-newspaper" href="assets/images/Portfolio/portfolio-4.png" class="view-btn"><i class="fas fa-search-plus"></i></a>
+                        <h4>Abysenia beauty Products</h4>
+                        <p>Built this a year ago—smooth project, solid site, great teamwork.</p>
+                        <a href="https://www.abyssinian-beauty-products.co.uk/" class="view-btn">
+                            <i >View the project</i></a>
                     </div>
                 </div>
                 <div class="portfolio-item image photography">
                     <img src="images/portfolio-5.png" alt="Portfolio-Image">
                     <div class="content">
-                        <h4>photography</h4>
-                        <p>category</p>
-                        <a data-effect="mfp-newspaper" href="assets/images/Portfolio/portfolio-5.png" class="view-btn"><i class="fas fa-search-plus"></i></a>
-                    </div>
-                </div>
-    
-                <div class="portfolio-item image photography">
-                    <img src="images/portfolio-6.png" alt="Portfolio-Image">
-                    <div class="content">
-                        <h4>photography</h4>
-                        <p>category</p>
-                        <a data-effect="mfp-newspaper" href="assets/images/Portfolio/portfolio-6.png" class="view-btn"><i class="fas fa-search-plus"></i></a>
+                        <h4>Samuel Studio</h4>
+                        <p>Volunteered a project for the NGO Samuel Studio—happy to support.</p>
+                        <a href="https://www.studiosamuel.org/" class="view-btn">  <i>View the project</i></a>
                     </div>
                 </div>
     
@@ -529,7 +505,7 @@
 <!-------------------- Blog Area (End) -------------------->
 <!-------------------- Footer Area (Start) -------------------->
 <footer>
-     <button class="open-popup-btn btn" onclick="openPopup()">Contact Me</button>
+     <button class="open-popup-btn btn" onclick="openPopup()">Let's Get Started</button>
     <div class="social">
         <a href="#" class="fab fa-facebook-f"></a>
         <a href="#" class="fab fa-twitter"></a>
@@ -614,7 +590,7 @@
       
       <!-- Checkbox Section -->
       <div class="form-group">
-        <label>How I Assist:</label>
+        <label>How may i Assist:</label>
         <div class="checkbox-group">
           <label class="checkbox-option">
             <input type="checkbox" name="options" value="1"> Web Development
@@ -628,6 +604,9 @@
           <label class="checkbox-option">
             <input type="checkbox" name="options" value="4"> Training / Mentor
           </label>
+          <label class="checkbox-option">
+            <input type="checkbox" name="options" value="4"> Other
+          </label>
         </div>
       </div>
 
@@ -639,8 +618,5 @@
     </form>
   </div>
 </div>
-
-
-<script src="../path/to/flowbite/dist/flowbite.min.js"></script>
 </body>
-    </html>
+</html>
