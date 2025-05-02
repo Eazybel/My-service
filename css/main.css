@@ -209,7 +209,7 @@ header .navbar a.active {
 
 header #menu-btn {
   font-size: 2rem;
-  color: var(--white);
+  color: var(--purple);
   cursor: pointer;
   transition: all 0.5s linear;
   display: none;
