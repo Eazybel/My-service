@@ -20,6 +20,12 @@
 
 
 /*--------------------- 0- Global CSS (Start) ---------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Arbutus+Slab');
+
+	.arbutus-slab-family {
+		font-family: "Arbutus Slab", serif;
+		font-size: 18px;
+	}
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 
 :root{
@@ -94,8 +100,8 @@ section{
 /*--------------------- 0- Global CSS (End) ---------------------*/
 .spelling-error {
   text-decoration-line: underline;
-  text-decoration-style: wavy;
-  text-decoration-color: red;
+  text-decoration-color: rgb(252, 252, 252);
+  text-underline-offset: 2px;
 }
 
 
@@ -183,7 +189,7 @@ header.sticky {
 }
 
 .logo-img {
-  height: 45px; /* Slightly smaller for reduced height */
+  height: 40px; /* Slightly smaller for reduced height */
   margin-right: 10px;
 }
 
@@ -1790,3 +1796,7 @@ footer .content p span{
   }
 
 /*--------------------- 13- Scroll-Top (End) ---------------------*/
+.Arbutus-Slab-Family {
+  Font-Family: "Arbutus Slab", Serif;
+  Font-Size: 18px;
+}
