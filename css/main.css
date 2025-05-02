@@ -92,7 +92,11 @@ section{
 }
 
 /*--------------------- 0- Global CSS (End) ---------------------*/
-
+.spelling-error {
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: red;
+}
 
 
 /*--------------------- 1- Heading CSS (Start) ---------------------*/
