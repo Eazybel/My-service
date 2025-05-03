@@ -396,41 +396,43 @@ header #menu-btn:hover {
 }
 
 .counting{
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 35rem;
-        flex: 1 1 35rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
+    justify-content: space-between; /* Add spacing between boxes */
+    gap: 1.5rem; /* Add consistent spacing between boxes */
+}
+
+.counting .box {
+    flex: 1 1 calc(23% - 1.5rem); /* Reduce box size slightly */
+    text-align: center; /* Center-align text */
+    padding: 1.5rem 1rem; /* Adjust padding for better spacing */
+    background-color: rgb(48, 47, 47); /* Use the dark grey color */
+    border-radius: 0.8rem; /* Slightly rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle shadow for depth */
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 1rem;
+    align-items: center;
+    min-height: 140px; /* Ensure consistent height */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Add hover effect */
 }
 
-.counting .box{
-    -webkit-box-flex: 1;
-    -ms-flex: 1 1 18rem;
-        flex: 1 1 18rem;
-    text-align: center;
-    background-color: #222;
-    padding: 2rem;
+.counting .box:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
 }
 
-.counting .box .count{
-    font-size: 3.5rem;
-    color: var(--purple);
-    padding-bottom: 0.5rem;
+.counting .box h1 {
+    margin-bottom: 0.5rem;
+    font-size: 3rem; /* Increase font size */
+    font-weight: 900; /* Make the font bolder */
+    color: rgb(223, 14, 223); /* Use purple for counter numbers */
 }
 
-.counting .box h3{
-    font-size: 1.8rem;
-    color: var(--white);
+.counting .box h3 {
+    font-size: 1.6rem; /* Increase font size */
+    font-weight: 1000; /* Slightly bold for better readability */
+    color: white; /* Use grey for secondary text */
 }
 
 .skill-container{
