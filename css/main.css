@@ -229,7 +229,10 @@ header #menu-btn:hover {
   color: var(--purple);
 }
 
-
+.header .navbar {
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* For Safari */
+}
 
 /*--------------------- 3- Header Area CSS (End) ---------------------*/
 
@@ -369,20 +372,6 @@ header #menu-btn:hover {
     padding-bottom: 1rem;
 }
 
-.about .content .about-info{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-        justify-content: flex-start;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
 
 .about .content .about-info .info{
     -webkit-box-flex: 1;
@@ -926,7 +915,7 @@ background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, F
 
 .testi-item .intro h3 {
     font-size: 2rem;
-    color: var(--white);
+    color: var (--white);
     padding-bottom: 0.5rem;
 }
 
@@ -1794,6 +1783,26 @@ footer .content p span{
     padding: 14px 28px;
     font-size: 16px;
   }
+
+/* Styling for the "Let's Get Started" button */
+.open-popup-btn {
+    display: inline-block;
+    background-color: #BC8CF2; /* Purple background */
+    color: #ffffff; /* White text */
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1.6rem; /* Ensure consistent font size */
+    cursor: pointer;
+}
+
+.open-popup-btn:hover {
+    background-color: #FFD700; /* Gold background on hover */
+    color: #000000; /* Black text on hover */
+}
 
 /*--------------------- 13- Scroll-Top (End) ---------------------*/
 .Arbutus-Slab-Family {

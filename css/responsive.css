@@ -16,7 +16,9 @@
         right: 0; 
         top:100%;
         padding: 0rem 2rem;
-        background: #2c2c2c;
+        background: rgba(28, 73, 84, 0.8); /* Semi-transparent dark teal background */
+        -webkit-backdrop-filter: blur(10px); /* Blur effect for Safari */
+        backdrop-filter: blur(10px); /* Blur effect */
         border: 0.1rem solid #BC8CF2;
         -webkit-transition: 0.2s linear;
         -moz-transition: 0.2s linear;
@@ -37,9 +39,15 @@
   
     .header .navbar a{
         display: block;
-        color: #000000;
+        color: #ffffff; /* White color for better contrast */
         padding: 1.5rem 0;
         margin: 1rem 0;
+        text-decoration: none; /* Remove underline */
+        font-weight: 500; /* Slightly bold for readability */
+    }
+
+    .header .navbar a:hover {
+        color: #FE9C00; /* Gold color for hover effect */
     }
   
     .navbar::-webkit-scrollbar{
@@ -59,6 +67,23 @@
         padding: 2rem;
     }
 
+    .open-popup-btn {
+        display: inline-block;
+        background-color: #BC8CF2; /* Purple background */
+        color: #ffffff; /* White text */
+        padding: 1rem 2rem;
+        border-radius: 0.5rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        text-decoration: none;
+        transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .open-popup-btn:hover {
+        background-color: #FFD700; /* Gold background on hover */
+        color: #000000; /* Black text on hover */
+    }
+
 }
 
 @media (max-width: 450px){
@@ -70,7 +95,9 @@
         padding: 1rem;
     }
 
-
+    .header .navbar {
+        width: 100%; /* Ensure the navbar fits smaller screens */
+    }
 
 }
 
