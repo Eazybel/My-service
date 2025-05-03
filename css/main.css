@@ -915,7 +915,7 @@ background: linear-gradient(to right, #8E54E9, #4776E6); /* W3C, IE 10+/ Edge, F
 
 .testi-item .intro h3 {
     font-size: 2rem;
-    color: var (--white);
+    color: var(--white);
     padding-bottom: 0.5rem;
 }
 
