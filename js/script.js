@@ -35,6 +35,7 @@ $(document).ready(function(){
 
 // Same JavaScript as before with updated form handling
 
+
     function openPopup() {
       document.getElementById('popupContainer').style.display = 'flex';
     }
@@ -86,3 +87,4 @@ $(document).ready(function(){
       form.submit();
       form.reset(); // ✅ Clear form after submit
     });
+    
