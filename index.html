@@ -513,9 +513,8 @@
           smartBackspace: true,
           fadeOut: true,       // fade out effect on delete
           fadeOutClass: 'typed-fade-out',
-          fadeOutDelay: 300    // delay before fade out
+          fadeOutDelay: 100    // delay before fade out
         });
-    <!-- Contact-Form Script -->
     </script>
     <script>
         jQuery('#contactUs-Form').on('submit',function(e){
@@ -588,10 +587,68 @@
 <!-- Confirmation Popup -->
 <div id="confirmationPopup" class="popup-container">
     <div class="popup-content">
-      <h2>Do you want to hire me on Upwork now?</h2>
+        <span class="close-btn" id="closeConfirmationPopup">&times;</span>
+      <h2>Do you like to hire me on Upwork now?</h2>
       <button id="hireNowBtn">Hire Now</button>
-      <button id="maybeLaterBtn">Maybe Later</button>
+      <button id="maybeLaterBtn">After Meeting</button>
     </div>
-  </div>
+</div>
+  <script>
+     function openPopup() {
+      document.getElementById('popupContainer').style.display = 'flex';
+    }
+    
+    function closePopup() {
+      document.getElementById('popupContainer').style.display = 'none';
+    }
+    
+    window.onclick = function(event) {
+      const popup = document.getElementById('popupContainer');
+      if (event.target === popup) {
+        closePopup();
+      }
+    }
+    
+    // Keep track of whether form should submit
+    let pendingSubmission = false;
+    
+    // Get form elements
+    const form = document.getElementById('contactForm');
+    const confirmationPopup = document.getElementById('confirmationPopup');
+    const messageField = document.getElementById('message');
+    
+    // Intercept form submit
+    form.addEventListener('submit', function(e) {
+      if (!pendingSubmission) {
+        e.preventDefault(); // Stop it the first time
+        confirmationPopup.style.display = 'flex'; // Show Upwork confirm popup
+      }
+    });
+    
+    // Hire Now button
+    document.getElementById('hireNowBtn').addEventListener('click', function () {
+      messageField.value += "\n\nUpwork Verified";
+      pendingSubmission = true;
+      confirmationPopup.style.display = 'none';
+      form.submit();
+      form.reset(); // ✅ Clear form after submit
+      setTimeout(() => {
+        window.location.href = "https://www.upwork.com/freelancers/~01362d3f829f520be8?mp_source=share"; // Replace with your Upwork link
+      }, 1000);
+    });
+    
+    // Maybe Later button
+    document.getElementById('maybeLaterBtn').addEventListener('click', function () {
+      messageField.value += "\n\nUpwork Not Verified";
+      pendingSubmission = true;
+      confirmationPopup.style.display = 'none';
+      form.submit();
+      form.reset(); // ✅ Clear form after submit
+    });
+    document.getElementById('closeConfirmationPopup').onclick = function() {
+  document.getElementById('confirmationPopup').style.display = 'none';
+};
+
+  </script>
 </body>
 </html>
