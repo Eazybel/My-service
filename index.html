@@ -505,13 +505,16 @@
     <!-- Typed Script -->
     <script>
         var typed = new Typed('.typing-text', {
-
-            strings: ['Web Developer', 'Web Designer', 'Tech Bloger'],
-            typeSpeed: 150,
-            loop: true
+          strings: ['Web Developer', 'Web Designer', 'Tech Blogger'],
+          typeSpeed: 30,       // very fast typing
+          backSpeed: 20,       // smooth deleting
+          backDelay: 1200,     // nice pause before deleting
+          loop: true,
+          smartBackspace: true,
+          fadeOut: true,       // fade out effect on delete
+          fadeOutClass: 'typed-fade-out',
+          fadeOutDelay: 300    // delay before fade out
         });
-    </script>
-
     <!-- Contact-Form Script -->
     <script>
         jQuery('#contactUs-Form').on('submit',function(e){
@@ -581,6 +584,15 @@
       
   </div>
 </div>
+<!-- Confirmation Popup -->
+<div id="confirmationPopup" class="popup-container">
+    <div class="popup-content">
+      <h2>Do you want to hire me on Upwork now?</h2>
+      <button id="hireNowBtn">Hire Now</button>
+      <button id="maybeLaterBtn">Maybe Later</button>
+    </div>
+  </div>
+  
 </body>
 </html>
 </script>
