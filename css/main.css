@@ -1790,6 +1790,7 @@ footer .content p span{
 .open-popup-btn {
     display: inline-block;
     background-color: #BC8CF2; /* Purple background */
+    border: none;
     color: #ffffff; /* White text */
     padding: 1rem 2rem;
     border-radius: 0.5rem;
@@ -1831,25 +1832,54 @@ footer .content p span{
   max-width: 400px;
   width: 90%;
 }
-
-#confirmationPopup button {
-  margin: 10px;
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
+#hireNowBtn {
+  background-color: rgb(116, 216, 116);
+  color: rgb(0, 0, 0);
 }
 
-#hireNowBtn {
-  background-color: green;
-  color: white;
+
+.wrap {
+  margin-top: 3vh;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-group {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+#maybeLaterBtn, #hireNowBtn {
+  flex: 1;
+  min-width: 120px;
+  height: 45px;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 45px;
+  box-shadow: 0px 8px 15px rgba(41, 40, 40, 0.381);
+  transition: all 0.3s ease 0s;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #maybeLaterBtn {
-  background-color: gray;
-  color: white;
+  background-color: #ffffff;
+  color: #000;
+  white-space: nowrap;
 }
+
+#hireNowBtn {
+  background-color: #47ca64;
+  color: #ffffff;
+}
+
 #confirmationPopup .close-btn {
   position: absolute;
   top: 10px;

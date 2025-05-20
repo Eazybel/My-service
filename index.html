@@ -506,16 +506,15 @@
     <script>
         var typed = new Typed('.typing-text', {
           strings: ['Web Developer', 'Web Designer', 'Tech Blogger'],
-          typeSpeed: 30,       // very fast typing
-          backSpeed: 20,       // smooth deleting
-          backDelay: 1200,     // nice pause before deleting
+          typeSpeed: 50,          // Slower typing for smoother performance
+          backSpeed: 30,          // Slightly slower for better readability
+          backDelay: 1000,        // Standard pause
           loop: true,
           smartBackspace: true,
-          fadeOut: true,       // fade out effect on delete
-          fadeOutClass: 'typed-fade-out',
-          fadeOutDelay: 100    // delay before fade out
+          fadeOut: false          // Disabling fadeOut improves performance
         });
-    </script>
+      </script>
+      
     <script>
         jQuery('#contactUs-Form').on('submit',function(e){
           jQuery('#msg').html('');
@@ -589,8 +588,13 @@
     <div class="popup-content">
         <span class="close-btn" id="closeConfirmationPopup">&times;</span>
       <h2>Do you like to hire me on Upwork now?</h2>
-      <button id="hireNowBtn">Hire Now</button>
-      <button id="maybeLaterBtn">After Meeting</button>
+      <div class="wrap">
+        <div class="button-group">
+          <button id="maybeLaterBtn">After Meeting</button>
+          <button id="hireNowBtn">Hire Now</button>
+        </div>
+      </div>
+      
     </div>
 </div>
   <script>
