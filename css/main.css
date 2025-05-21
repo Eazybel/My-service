@@ -1710,6 +1710,7 @@ footer .content p span{
     font-size: 1.5rem;
     font-weight: bold;
     color: #d4d4d4;
+    background-color:black;
     backdrop-filter: blur(20px); /* Blur effect */
     -webkit-backdrop-filter: blur(20px);
   }
