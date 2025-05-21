@@ -1910,3 +1910,6 @@ button svg.icon {
   width: 18px; /* Adjust size to fit */
   height: 28px; /* Adjust size to fit */
 }
+.port{
+  text-align: center;
+}
