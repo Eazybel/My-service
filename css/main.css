@@ -1710,9 +1710,11 @@ footer .content p span{
     font-size: 1.5rem;
     font-weight: bold;
     color: #d4d4d4;
-    background-color:black;
-    backdrop-filter: blur(20px); /* Blur effect */
-    -webkit-backdrop-filter: blur(20px);
+    background: rgba(0, 0, 0, 0.8); /* Semi-transparent dark teal background */
+   -webkit-backdrop-filter: blur(10px); /* Blur effect for Safari */
+    backdrop-filter: blur(10px); 
+   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   }
   
   .popup-content {
@@ -1759,7 +1761,7 @@ footer .content p span{
   
   label {
     display: block;
-    font-size:1rem; 
+    font-size:2rem; 
     margin-bottom: 8px;
   }
   
