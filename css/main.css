@@ -1758,6 +1758,7 @@ footer .content p span{
   
   label {
     display: block;
+    font-size:1rem; 
     margin-bottom: 8px;
   }
   
