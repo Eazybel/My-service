@@ -606,8 +606,8 @@
           </div>
     </div>
 </div>
-  <script>
-     function openPopup() {
+<script>
+    function openPopup() {
       document.getElementById('popupContainer').style.display = 'flex';
     }
     
@@ -622,19 +622,16 @@
       }
     }
     
-    // Keep track of whether form should submit
     let pendingSubmission = false;
-    
-    // Get form elements
     const form = document.getElementById('contactForm');
     const confirmationPopup = document.getElementById('confirmationPopup');
     const messageField = document.getElementById('message');
     
-    // Intercept form submit
-    form.addEventListener('submit', function(e) {
+    // Intercept the first form submission
+    form.addEventListener('submit', function (e) {
       if (!pendingSubmission) {
-        e.preventDefault(); // Stop it the first time
-        confirmationPopup.style.display = 'flex'; // Show Upwork confirm popup
+        e.preventDefault(); // Stop actual submit
+        confirmationPopup.style.display = 'flex'; // Show Upwork confirmation popup
       }
     });
     
@@ -644,7 +641,9 @@
       pendingSubmission = true;
       confirmationPopup.style.display = 'none';
       form.submit();
-      form.reset(); // ✅ Clear form after submit
+      form.reset(); // Clear form fields
+    
+      // Redirect after slight delay
       setTimeout(() => {
         window.location.href = "https://www.upwork.com/freelancers/~01362d3f829f520be8?mp_source=share"; // Replace with your Upwork link
       }, 1000);
@@ -656,12 +655,16 @@
       pendingSubmission = true;
       confirmationPopup.style.display = 'none';
       form.submit();
-      form.reset(); // ✅ Clear form after submit
+      form.reset(); // Clear form fields
     });
-    document.getElementById('closeConfirmationPopup').onclick = function() {
-  document.getElementById('confirmationPopup').style.display = 'none';
-};
-
-  </script>
+    
+    // Reload the page when user returns from Formspree confirmation
+    window.addEventListener("pageshow", function (event) {
+      if (event.persisted || (window.performance && window.performance.navigation.type === 2)) {
+        window.location.reload();
+      }
+    });
+    </script>
+    
 </body>
 </html>
