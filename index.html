@@ -657,6 +657,9 @@
       form.submit();
       form.reset(); // Clear form fields
     });
+    document.getElementById('closeConfirmationPopup').onclick = function() {
+  document.getElementById('confirmationPopup').style.display = 'none';
+};
     
     // Reload the page when user returns from Formspree confirmation
     window.addEventListener("pageshow", function (event) {
