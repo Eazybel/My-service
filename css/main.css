@@ -152,11 +152,7 @@ section{
     padding-left: 1rem;
 }
 
-.btn:hover{
-    color: var(--white);
-    background-color: var(--purple);
-    cursor: pointer;
-}
+
 
 /*--------------------- 2- Button CSS (End) ---------------------*/
 
@@ -270,6 +266,7 @@ header #menu-btn:hover {
 }
 
 .home .image img{
+  margin-top: 10vh;
     height: 40rem;
     width: 40rem;
     border-radius: 50% 50% 50% 50% / 30% 30% 70% 70% ;
@@ -1712,13 +1709,14 @@ footer .content p span{
     align-items: center;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #fefefe;
+    color: #d4d4d4;
+    backdrop-filter: blur(20px); /* Blur effect */
+    -webkit-backdrop-filter: blur(20px);
   }
   
   .popup-content {
-    background-color: #336D82;
     padding: 40px;
-    border-radius: 10px;
+    border: 5px solid white;
     width: 90%;
     max-width: 600px; /* Increased size */
     position: relative;
@@ -1728,8 +1726,9 @@ footer .content p span{
     position: absolute;
     top: 15px;
     right: 20px;
-    font-size: 32px;
+    font-size: 36px;
     cursor: pointer;
+    color: #e0d9fe;
   }
   
   /* Checkbox Styles */
@@ -1765,17 +1764,16 @@ footer .content p span{
   input, textarea {
     width: 100%;
     padding: 10px;
-    border: 1px solid #d4d4d4;
+    border: 3px solid #e0e0e0;
     border-radius: 5px;
     font-size: 13px;
+    background-color: #f3f1f1;
   }
   
   button[type="submit"] {
-    background-color: rgb(5, 115, 5);
-    color: white;
     padding: 12px 24px;
-    font-size: 16px;
-    border: none;
+    font-weight: bold;
+    font-size: larger;
     border-radius: 5px;
     cursor: pointer;
     width: 100%;
@@ -1788,23 +1786,20 @@ footer .content p span{
 
 /* Styling for the "Let's Get Started" button */
 .open-popup-btn {
-    display: inline-block;
-    background-color: #BC8CF2; /* Purple background */
-    border: none;
+    display: inline-block; /* Purple background */
+    border:5px solid purple;
     color: #ffffff; /* White text */
     padding: 1rem 2rem;
-    border-radius: 0.5rem;
-    font-weight: 600;
+    border-radius: 1rem;
+    font-weight:bolder;
     text-transform: uppercase;
     text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
     font-size: 1.6rem; /* Ensure consistent font size */
     cursor: pointer;
 }
 
 .open-popup-btn:hover {
-    background-color: #FE9C00; /* Gold background on hover */
-    color: #000000; /* Black text on hover */
+    transform: translateX(2px);
 }
 
 /*--------------------- 13- Scroll-Top (End) ---------------------*/
@@ -1833,8 +1828,12 @@ footer .content p span{
   width: 90%;
 }
 #hireNowBtn {
-  background-color: rgb(116, 216, 116);
+  background-color: #ffffff;
   color: rgb(0, 0, 0);
+}
+.maybeLaterBtn {
+  background-color: rgb(1, 38, 81);
+  color: rgb(253, 253, 253);
 }
 
 
@@ -1853,31 +1852,25 @@ footer .content p span{
   max-width: 600px;
 }
 
-#maybeLaterBtn, #hireNowBtn {
+#maybeLaterBtn, #hireNowBtn, .hireNowBtn {
   flex: 1;
   min-width: 120px;
   height: 45px;
-  text-transform: uppercase;
-  border: none;
   border-radius: 45px;
-  box-shadow: 0px 8px 15px rgba(41, 40, 40, 0.381);
+  box-shadow: 0px 3px 15px rgba(49, 48, 48, 0.559);
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: bold;
 }
 
 #maybeLaterBtn {
-  background-color: #ffffff;
-  color: #000;
-  white-space: nowrap;
-}
-
-#hireNowBtn {
-  background-color: #47ca64;
+  background-color: rgb(1, 38, 81);
   color: #ffffff;
+  white-space: nowrap;
 }
 
 #confirmationPopup .close-btn {
@@ -1886,4 +1879,5 @@ footer .content p span{
   right: 15px;
   cursor: pointer;
   font-size: 24px;
+  color: #000000;
 }

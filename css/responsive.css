@@ -69,7 +69,6 @@
 
     .open-popup-btn {
         display: inline-block;
-        background-color: #BC8CF2; /* Purple background */
         color: #ffffff; /* White text */
         padding: 1rem 2rem;
         border-radius: 0.5rem;
@@ -77,11 +76,6 @@
         text-transform: uppercase;
         text-decoration: none;
         transition: background-color 0.3s ease, color 0.3s ease;
-    }
-
-    .open-popup-btn:hover {
-        background-color: #FFD700; /* Gold background on hover */
-        color: #000000; /* Black text on hover */
     }
 
 }
