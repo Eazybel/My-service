@@ -1823,9 +1823,9 @@ footer .content p span{
 }
 
 #confirmationPopup .popup-content {
-  background: #f8f8f8;
+ background: linear-gradient(to right, #83efa2, #4cedc5);
   color: #030303;
-  border-color: #000000;
+  border-color: #ededed;
   padding: 30px;
   border-radius: 10px;
   text-align: center;
